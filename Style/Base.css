@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: auto !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  overflow-y: scroll;
+  background-color: var(--background-color);
+
+}
+
+/* NOTE: added because the user cannot scroll on the page when extend nav mode */
+.lock-scrollbar{
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  color: unset;
+}

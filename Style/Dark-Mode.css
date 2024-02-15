@@ -1,0 +1,366 @@
+:root {
+  color-scheme: dark;
+  --box-color: #5b5d72;
+  --color-dark-background: #181a1e;
+  --color-dark-whith: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-dark-light: #00000066;
+  --box-shadow-dark: 0 2rem 3rem var(--color-dark-light);
+  --color-dark: rgba(149, 155, 207, 0.308);
+}
+
+/* SCOPE: Header-And-Nav */
+.header-one,
+main,
+.nav,
+body {
+  background-color: #19191f;
+  color: white;
+}
+
+.fix-zindex{
+  background-color: #19191f;
+}
+
+
+.active-setting {
+  background-color: #2c4793c9 !important;
+  color: white;
+  border-radius: 50px;
+}
+
+.parg-main {
+  background-color: #212429;
+  color: var(--color-dark-whith);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.navlink-text-style {
+  color: white;
+}
+
+.menu-icon-item-1,
+.menu-icon-item-2,
+.menu-icon-item-3 {
+  background-color: white;
+}
+
+.search-header input {
+  background: var(--color-dark-background);
+}
+
+.search-header input:focus {
+  background: var(--color-dark-background);
+}
+
+.search-header span svg {
+  fill: #a3a3a3;
+}
+
+.navbar-nav li.active {
+  background-color: var(--color-dark);
+}
+
+.navbar-nav li.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #4c00ff;
+}
+
+.navbar-nav li.active .navlink-text-style {
+  color: #9a6fff;
+}
+
+.add-icon {
+  color: white;
+}
+
+.dark-mode-icon-setting,
+.translate-icon-setting {
+  fill: white;
+}
+
+.pop-update[open] {
+  background: var(--color-dark-background);
+}
+
+.pop-update .pop-update-content h4 {
+  background-color: #141414;
+  padding: 10px;
+  box-shadow: 0px 1px 7px 0px #000000;
+}
+
+.pop-update .pop-update-content button {
+  box-shadow: 0px 1px 4px #000000;
+}
+
+.pop-update .pop-update-content button:active {
+  background-color: black;
+}
+
+
+
+/* SCOPE: Section1-Home */
+.homeH3 span:nth-child(2) {
+  color: #3b2ad1;
+}
+
+.home-sec-links i {
+  color: #ffffff;
+}
+
+.home-sec-detail div {
+  all: unset;
+  background-color: unset;
+}
+
+
+
+/* SCOPE: Section2-About */
+.about-sec-ta tr td span:first-child svg {
+  fill: rgb(193 193 193);
+}
+
+
+
+
+/* SCOPE: Section3-SKill */
+.skill-sec-main .skill-sec-ul1 .activeSSU1 {
+  color: #9200ff !important;
+  border-bottom: 2.5px solid #9200ff;
+}
+
+.skill-sec-ma .skill-sec-ma1-box {
+  border: 3px solid #322944;
+}
+
+.skill-sec-ma .percent {
+  background-color: #322944;
+}
+
+.skill-sec-ma .percent .outer {
+  box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px rgb(30 29 29 / 70%);
+}
+
+.skill-sec-ma .percent .inner {
+  box-shadow: inset 4px 4px 6px -1px rgb(0 0 0 / 20%), inset -4px -4px 6px -1px rgb(20 20 20 / 70%), -0.5px -0.5px 0px rgb(0 0 0 / 15%), 0px 12px 10px -10px rgb(0 0 0 / 5%);
+}
+
+.skill-sec-ma .skill-sec-ma1-pnumber {
+  color: #9200ff;
+}
+
+.skill-sec-ma .skill-text {
+  background-color: #322944;
+}
+
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
+  background: #5b00a1;
+  box-shadow: 3px 3px 9px 0px #2e074ec9;
+}
+
+
+.moreskill .moreskill-text ul li>div:last-child {
+  background-color: #424142;
+}
+
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer,
+.sec4-language-main .language-sec-detailes summary div:last-child {
+  background-color: #424142;
+}
+
+.sec4-language-main summary {
+  color: #a021ff;
+}
+
+
+
+.sec5-school-alert p {
+  background-color: #2d285c;
+}
+
+
+.sec6-contact-main .sec6-contact-text ul li span svg {
+  fill: white;
+}
+
+.sec6-contact-main .sec6-contact-text ul li:hover {
+  color: #9200ff;
+}
+
+.sec6-contact-main .sec6-contact-text ul li:hover span svg {
+  fill: #9200ff;
+}
+
+
+.sec6-contact-main .sec6-contact-text ul li div.hover div.hover-inner {
+  background: #9200ff;
+}
+
+
+.sec6-contact-main .sec6-contact-form form div input,
+.sec6-contact-main .sec6-contact-form form div textarea {
+  border: 2px solid #7a7a7a;
+  background: #212429;
+}
+
+.sec6-contact-main .sec6-contact-form form div button {
+  border: 2px solid #7a7a7a;
+  background: #363636;
+}
+
+
+footer.footer-page>div.color {
+  background-color: #212429;
+}
+
+
+/* BREAKPOINT: Max-Width:768px */
+@media (max-width: 768px) {
+  .home-sec-detail div {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    box-shadow: 2px -2px 10px 0px #000000c9;
+    padding: 11px;
+  }
+
+
+}
+
+
+
+/* BREAKPOINT: Max-Width:576px */
+@media (max-width: 576px) {
+
+  /* SCOPE: Header-And-Nav {(in: BREAKPOINT)} */
+  .active-setting {
+    background-color: #2c4793 !important;
+    color: white;
+  }
+
+  .navlink-text-style {
+    color: white;
+  }
+
+  .nav {
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.788);
+    border: 3px solid rgb(255 255 255 / 43%);
+    box-shadow: none;
+  }
+
+  .mobile-nav-height {
+    box-shadow: 0px 0px 40px 30px #080808;
+  }
+
+  .navbar-nav li.active:before {
+    content: unset;
+    width: 0px;
+    height: unset;
+    background-color: unset;
+  }
+
+  .serch-taskbar-icon,
+  .angle-up {
+    fill: white;
+  }
+
+  .dark-mode-icon-setting,
+  .translate-icon-setting {
+    width: 30px;
+    fill: white;
+  }
+
+  .search-box-div,
+  .search-box {
+    background-color: var(--box-color);
+  }
+
+  .search-box-icon {
+    fill: white;
+  }
+
+  .search-box:focus {
+    background-color: var(--box-color);
+  }
+
+  .date-clock-menu {
+    color: white;
+  }
+
+  .setting-item {
+    background-color: var(--box-color);
+    color: white;
+  }
+
+  a.nav-link span:first-child {
+    background-color: var(--box-color);
+  }
+
+  .navbar-nav li.active span:first-child {
+    background-color: rgb(44 71 147);
+  }
+
+  .navbar-nav li.active .navlink-text-style {
+    color: #608aff;
+  }
+
+  .navbar-nav li.active {
+    background-color: unset;
+  }
+
+  .taskbar-mobile {
+    color: white;
+  }
+
+  .menu-icon-item1-mobile,
+  .menu-icon-item2-mobile,
+  .menu-icon-item3-mobile,
+  .menu-icon-item4-mobile {
+    background-color: white;
+  }
+
+  main {
+    background-color: #181a1e;
+    color: white;
+  }
+
+  .home-sec-detail div {
+    all: unset;
+
+  }
+
+
+  .shape img {
+    transform: none !important;
+    width: 100%;
+  }
+
+
+
+  /* SCOPE: Section2-About {(in: BREAKPOINT)} */
+  .about-sec-ta tbody tr:nth-child(even) {
+    background-color: #18181894;
+  }
+
+  .about-sec-ta tr td span:first-child svg {
+    fill: url(#abosecta);
+  }
+
+
+
+  .skill-sec-main .skill-sec-ul1 .activeSSU1 {
+    color: white !important;
+    border-bottom: 0;
+  }
+
+  .skill-sec-main .skill-sec-ul1>li {
+    background: #484848;
+  }
+
+}

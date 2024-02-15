@@ -1,0 +1,102 @@
+/* SCOPE: lan:fa */
+@font-face {
+  font-family: "Beirut";
+  src: url("../Fonts/Mj_Beirut.ttf") format("ttf"),
+    url("../Fonts/Mj_Beirut.woff") format("woff"),
+    url("../Fonts/Mj_Beirut.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "Homa";
+  src: url("../Fonts/BHoma.ttf") format("ttf"),
+    url("../Fonts/BHoma.woff") format("woff"),
+    url("../Fonts/BHoma.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "koodak";
+  src: url("../Fonts/KoodakB.ttf") format("ttf"),
+    url("../Fonts/KoodakBold.woff") format("woff"),
+    url("../Fonts/KoodakB.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "promoter";
+  src: url("../Fonts/Mj_Promoter.ttf") format("ttf"),
+  url("../Fonts/Mj_Promoter.woff") format("woff"),
+  url("../Fonts/Mj_Promoter.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "casa";
+  src: url("../Fonts/Mj_Casablanca.ttf") format("ttf"),
+  url("../Fonts/Mj_Casablanca.woff") format("woff"),
+  url("../Fonts/Mj_Casablanca.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "naz";
+  src: url("../Fonts/Nazanin.ttf") format("ttf"),
+  url("../Fonts/Nazanin.woff") format("woff"),
+  url("../Fonts/Nazanin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bnaz";
+  src: url("../Fonts/BNaznnBd_0.ttf") format("ttf"),
+  url("../Fonts/BNazaninBold.woff") format("woff"),
+  url("../Fonts/BNaznnBd_0.woff2") format("woff2");
+}
+
+
+
+
+/* SCOPE: lan:en */
+
+@font-face {
+  font-family: "pop";
+  src: url("../Fonts/MochiyPopOne-Regular.ttf") format("ttf"),
+  url("../Fonts/MochiyPopOne-Regular.woff") format("woff"),
+  url("../Fonts/MochiyPopOne-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "pin";
+  src: url("../Fonts/Poppins-Medium.ttf") format("ttf"),
+  url("../Fonts/Poppins-Medium.woff") format("woff"),
+  url("../Fonts/Poppins-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "osw";
+  src: url("../Fonts/Oswald-Medium.ttf") format("ttf"),
+  url("../Fonts/Oswald-Medium.woff") format("woff"),
+  url("../Fonts/Oswald-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "oswbold";
+  src: url("../Fonts/Oswald-Bold.ttf") format("ttf"),
+  url("../Fonts/Oswald-Bold.woff") format("woff"),
+  url("../Fonts/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "fred";
+  src: url("../Fonts/FredokaOne-Regular.ttf") format("ttf"),
+  url("../Fonts/FredokaOne-Regular.woff") format("woff"),
+  url("../Fonts/FredokaOne-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "kaush";
+  src: url("../Fonts/KaushanScript-Regular.ttf") format("ttf"),
+  url("../Fonts/KaushanScript-Regular.woff") format("woff"),
+  url("../Fonts/KaushanScript-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "alfa";
+  src: url("../Fonts/AlfaSlabOne-Regular.ttf") format("ttf"),
+  url("../Fonts/AlfaSlabOne-Regular.woff") format("woff"),
+  url("../Fonts/AlfaSlabOne-Regular.woff2") format("woff2");
+}

@@ -1,0 +1,179 @@
+.header-page .search-header div.sh {
+  direction: ltr;
+}
+
+
+.nav-main-grid {
+  direction: ltr;
+}
+
+.menu-icon {
+  margin: 25px 0 5px 17.5px;
+}
+
+
+
+.setting {
+  margin: 0 0px 0 10px;
+}
+
+
+
+.header-one {
+  padding: 10px 10px 20px 65px;
+}
+
+.padding-right-small-headerOne {
+  padding: 10px 10px 10px 65px;
+}
+
+@media (max-width: 992px) {
+  .header-one {
+    padding-left: 65px;
+
+  }
+}
+
+
+
+.pop-update .pop-update-content .pop-main p,
+.pop-update {
+  direction: ltr;
+}
+
+.pop-update .pop-update-content button {
+  right: 20px;
+  left: auto;
+}
+
+.setting-item-text {
+  font-family: "pop";
+  font-size: 12px;
+  padding: 0px;
+}
+
+.navlink-text-style {
+  font-family: "pop";
+  font-size: 12px;
+}
+
+.sec1-home {
+  direction: ltr;
+}
+
+.home-header {
+  font-family: "osw";
+}
+
+.homeH3 {
+  font-family: "fred";
+}
+
+.home-sec-p {
+  font-family: "pin";
+}
+
+.home-sec-but a {
+  font-family: "kaush";
+}
+
+.shape img {
+  transform: translate(65px, 0px);
+}
+
+.shape:hover img {
+  transform: scale(1.1) translate(65px, 0px);
+}
+
+
+
+
+
+
+
+.sec2-about {
+  direction: ltr;
+}
+
+.about-sec-ta tr {
+  font-family: "pin";
+}
+
+.about-sec-ta tbody td:first-child span:first-child {
+  padding: 0 5px 0 0px;
+}
+
+
+
+
+
+.sect3-skill,
+footer {
+  direction: ltr;
+}
+
+
+main article>section {
+  direction: ltr;
+}
+
+
+.skill-sec-ma .skill-text ul li tr:first-child td:first-child {
+  padding-left: 0px;
+  padding-right: 6px;
+}
+
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
+  font-size: 13px;
+}
+
+.moreskill .moreskill-text ul li>div:first-child {
+  font-family: "pin";
+}
+
+.sec4-language-main summary,
+.sec4-language-main .language-sec-detailes .content .cont-sec .read-text,
+.sec5-school-main .sec5-school-text,
+.sec5-school-alert p,
+.sec6-contact-main .sec6-contact-text ul li span:last-of-type {
+  font-family: "pin";
+}
+
+
+/* BREAKPOINT */
+@media (max-width: 768px) {
+  .shape img {
+    transform: translate(173px, 85px);
+    width: 250px;
+    height: 350px;
+  }
+
+  .shape:hover img {
+    transform: translate(173px, 85px);
+  }
+}
+
+/* BREAKPOINT */
+@media (max-width: 576px) {
+  .shape img {
+    height: unset;
+  }
+
+  .shape img {
+    transform: none;
+    width: 100%;
+  }
+
+  .shape:hover img {
+    transform: none;
+    width: 100%;
+  }
+
+  .setting{
+    margin: 0;
+  }
+
+  .setting-item-text {
+    padding: 0;
+  }
+}

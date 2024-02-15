@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: change the version in down -->
+<!--hello to V1.2.4-->
+
+<head>
+    <meta charset="UTF-8">
+    </meta>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+
+    <title>Aport</title>
+    <link rel="icon" href="Images/Logo-Web.png">
+    <!-- NOTE: This word "scope" in the comments means which part or area its codes are related to -->
+    <!-- Scope: Start(Css-links) -->
+
+    <!--NOTE: Bootstrap-css-Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+    </link>
+
+    <!--NOTE: Base-css-Link-->
+    <link rel="stylesheet" href="Style/Base.css">
+    </link>
+
+    <!--NOTE: Font-css-Link-->
+    <link rel="stylesheet" href="Style/Fonts.css">
+
+    <!--NOTE: Header-css-Link-->
+    <link rel="stylesheet" href="Style/Header$Nav.css">
+    </link>
+
+    <!--NOTE: Grid-css-Link-->
+    <link rel="stylesheet" href="Style/Grid.css">
+
+    <!--NOTE: Main-css-Link-->
+    <link rel="stylesheet" href="Style/Main.css">
+
+
+
+    <!--NOTE: Translate-css-Link-->
+    <!-- TODO: This link should be at the end of the links -->
+    <link rel="stylesheet" href="" id="tranST">
+
+    <!--NOTE: DorkMode-css-Link-->
+    <!-- TODO: This link should be at the end of the links -->
+    <link rel="stylesheet" href="" id="darkMOdeStyleLink">
+
+    <!-- Scope: End(Css-links) -->
+</head>
+
+<body dir="rtl" class="" id="body">
+    <header id="header" class="header-page">
+        <div class="header-one" id="headerOne">
+            <a href="Images/Logo-Web.png" class="logo-website-link">
+                <span>
+                    <img src="Images/Logo-Web.png" alt="this is logo website" class="logo-website">
+                </span>
+                <h1>
+                    Aport
+                </h1>
+            </a>
+            <div class="search-header">
+                <div class="sh">
+                    <input type="text" placeholder="جستجو" class="serchHPTR">
+                    <div class="shpop">
+                        <span class="updateTR">
+                            برای استفاده از این سرویس لطفا تا آپدیت بعدی شکیبا باشید.
+                        </span>
+                    </div>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <dialog class="pop-update" id="popUpdate">
+        <div class="pop-update-content">
+            <h4 class="updateHTR">
+                به روز رسانی
+            </h4>
+            <div class="pop-main">
+                <img src="Images/popup/icons8-update-96.png" alt="">
+                <p class="updateTR">
+                    برای استفاده از این سرویس لطفا تا آپدیت بعدی شکیبا باشید.
+                </p>
+            </div>
+            <button class="button-unstyle" id="butCloPop" class="update1TR">
+                باشه
+            </button>
+        </div>
+    </dialog>
+
+    <div class="dark-menu" id="menuDarkBack">
+    </div>
+
+    <div class="nav-main-grid" id="navMainGrid">
+
+        <nav class="nav" id="nav">
+            <div class="width" id="width"></div>
+
+            <div class="fix" id="navFix">
+                <button class="menu-icon button-unstyle" id="menuIcon" data-visible="true">
+                    <div class="menu-icon-item-1"></div>
+                    <div class="menu-icon-item-2"></div>
+                    <div class="menu-icon-item-3"></div>
+                </button>
+
+
+                <div class="taskbar-mobile" id="taskbarMobile">
+                    <a href="#menu" class="menu-icon-mobile" id="menuIconMobile" data-visible="false">
+                        <div class="menu-icon-item-mobile menu-icon-item1-mobile" id="menuIconItem1Mobile"></div>
+                        <div class="menu-icon-item-mobile menu-icon-item2-mobile" id="menuIconItem2Mobile"></div>
+                        <div class="menu-icon-item-mobile menu-icon-item3-mobile" id="menuIconItem3Mobile"></div>
+                        <div class="menu-icon-item-mobile menu-icon-item4-mobile" id="menuIconItem4Mobile"></div>
+                    </a>
+
+                    <button class="search button-unstyle" id="search">
+                        <svg class="serch-taskbar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
+                        </svg>
+                    </button>
+
+                    <a class="arrow-up button-unstyle" id="arrowUpIcon" href="#eee">
+                        <svg class="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12.71,12.54a1,1,0,0,0-1.42,0l-3,3A1,1,0,0,0,9.71,17L12,14.66,14.29,17a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Zm-3-1.08L12,9.16l2.29,2.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42l-3-3a1,1,0,0,0-1.42,0l-3,3a1,1,0,0,0,1.42,1.42Z" />
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="search-ul" id="searchUl">
+                    <div class="search-box-div" id="searchBoxDiv">
+                        <div>
+                            <input type="text" name="searchBox" id="searchBox" class="search-box">
+                        </div>
+                        <svg class="search-box-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
+                        </svg>
+                    </div>
+
+                    <div class="setting row">
+                        <div class="col-6 setting-1">
+                            <div class="setting-item" id="darkModeSetting" mode="false">
+                                <button class="setting-link button-unstyle">
+                                    <span>
+                                        <svg class="dark-mode-icon-setting" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                                        </svg>
+                                    </span>
+                                    <span class="setting-item-text display-none darkTR">
+                                        حالت تاریک
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-6 setting-2">
+                            <div class="setting-item" id="translate" language="english">
+                                <button class="setting-link button-unstyle">
+                                    <span>
+                                        <svg class="translate-icon-setting" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.022,7h1a1.0013,1.0013,0,0,1,1,1V9a1,1,0,0,0,2,0V8a3.00328,3.00328,0,0,0-3-3h-1a1,1,0,0,0,0,2Zm-4,9h-1a1.0013,1.0013,0,0,1-1-1V14a1,1,0,0,0-2,0v1a3.00328,3.00328,0,0,0,3,3h1a1,1,0,0,0,0-2Zm11-1a1,1,0,0,0,0-2h-3v-.5a1,1,0,0,0-2,0V13h-3a1,1,0,0,0,0,2h5.18427a6.72756,6.72756,0,0,1-1.22553,2.52667,6.66828,6.66828,0,0,1-.62915-.98272.99972.99972,0,1,0-1.77929.9121,8.67791,8.67791,0,0,0,.9591,1.468A6.6182,6.6182,0,0,1,13.10645,20.023a1.00008,1.00008,0,0,0,.42675,1.9541,8.63506,8.63506,0,0,0,3.445-1.62164,8.72368,8.72368,0,0,0,3.46857,1.62115,1,1,0,1,0,.43066-1.95312,6.72477,6.72477,0,0,1-2.4461-1.09009A8.73637,8.73637,0,0,0,20.24371,15ZM9.05176,11.24268a1.00011,1.00011,0,0,0,1.94043-.48536L9.23486,3.72754a2.28107,2.28107,0,0,0-4.42578,0L3.05176,10.75732a1.00011,1.00011,0,0,0,1.94043.48536L5.5528,9H8.49115ZM6.0528,7l.69671-2.78711a.2913.2913,0,0,1,.54492,0L7.99115,7Z" />
+                                        </svg>
+                                    </span>
+                                    <span class="setting-item-text display-none tran-tr bb">
+                                        ترجمه صفحه
+                                    </span>
+
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="navbar-nav" id="navbarNav">
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12 active" id="navItem">
+                            <a href="#home" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/Home-Icon.png" alt="Home Icon"
+                                        class="nav-home-icon navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none homeTR" id="navlinkTextStyle">
+                                    خانه
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12" id="navItem">
+                            <a href="#about" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/Aboutme-icon.png" alt="about me icon"
+                                        class="nav-aboutme-icon  navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none aboutTR" id="navlinkTextStyle">
+                                    درباره من
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12" id="navItem">
+                            <a href="#skill" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/Skill-Icon.png" alt="skill icon"
+                                        class="nav-skill-icon navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none skillTR" id="navlinkTextStyle">
+                                    مهارت ها
+                                </span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12" id="navItem">
+                            <a href="#language" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/Translate-removebg-preview (2).png" alt="services icon"
+                                        class="nav-services-icon navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none servicesTR" id="navlinkTextStyle">
+                                    زبان
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12" id="navItem">
+                            <a href="#school" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/School-Icon.png" alt="school icon"
+                                        class="nav-school-icon navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none schoolTR" id="navlinkTextStyle">
+                                    تحصیلات
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12" id="navItem">
+                            <a href="#contact" class="nav-link">
+                                <span>
+                                    <img src="Images/Nav-Icons/contact-Icon.png" alt="contact icon"
+                                        class="nav-contact-icon navlink-icon-style">
+                                </span>
+                                <span class="navlink-text-style display-none contactTR" id="navlinkTextStyle">
+                                    ارتباط با ما
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="margin-nav" id="marginNav">
+            <article>
+                <section id="home" class="sec1-home section-main padding-nav-top">
+                    <div class="container">
+                        <div class="row">
+                            <header class="col-12">
+                                <h2 class="home-header homeHeaderTR">خانه</h2>
+                            </header>
+                            <div class="col-12 parg-main home-sec-cont" id="homeSecParg">
+                                <div class="row align-items-sm-center w-100">
+                                    <div class="col-12 col-sm-8 col-md-6 home-sec-detail">
+                                        <div>
+                                            <h3 class="homeH3 homeH3TR">
+                                                <span>سلام من</span>
+                                                <span>ابوالفضل</span>
+                                                <span>هستم</span>
+                                            </h3>
+                                            <p class="home-sec-p homePTR">
+                                                به فرانت-اند علاقه داشته و در این زمینه فعالیت می کنم؛
+                                                <br>
+                                                راستش هنوز وقت نکردم برای خودم شعاری پیدا کنم.
+                                            </p>
+                                            <button class="button-unstyle home-sec-but">
+                                                <a href="" class="homeResTR">
+                                                    دانلود رزومه
+                                                </a>
+                                            </button>
+                                            <ul class="home-sec-links">
+                                                <li>
+                                                    <a href="https://github.com/AKiumarsi" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="linktip">Github</span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.linkedin.com/in/akiumarsiweb" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M17.5,8.999a5.41868,5.41868,0,0,0-2.56543.64453A.99918.99918,0,0,0,14,8.999H10a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-5.5a1,1,0,1,1,2,0v5.5a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-7.5A5.50685,5.50685,0,0,0,17.5,8.999Zm3.5,12H19v-4.5a3,3,0,1,0-6,0v4.5H11v-10h2v.70313a1.00048,1.00048,0,0,0,1.78125.625A3.48258,3.48258,0,0,1,21,14.499Zm-14-12H3a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1H7a.99942.99942,0,0,0,1-1v-12A.99943.99943,0,0,0,7,8.999Zm-1,12H4v-10H6ZM5.01465,1.542A3.23283,3.23283,0,1,0,4.958,7.999h.02832a3.23341,3.23341,0,1,0,.02832-6.457ZM4.98633,5.999H4.958A1.22193,1.22193,0,0,1,3.58887,4.77051c0-.7461.55957-1.22852,1.42578-1.22852A1.2335,1.2335,0,0,1,6.41113,4.77051C6.41113,5.5166,5.85156,5.999,4.98633,5.999Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="linktip">Linkedin</span>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+989154148240">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M12.71,16.29l-.15-.12a.76.76,0,0,0-.18-.09L12.2,16a1,1,0,0,0-.91.27,1.15,1.15,0,0,0-.21.33,1,1,0,0,0,1.3,1.31,1.46,1.46,0,0,0,.33-.22,1,1,0,0,0,.21-1.09A1,1,0,0,0,12.71,16.29ZM16,2H8A3,3,0,0,0,5,5V19a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V5A3,3,0,0,0,16,2Zm1,17a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="linktip">Phone number</span>
+                                                </li>
+                                                <li>
+                                                    <a href="https://wa.me/989154148240" target="_blank">
+                                                        <?xml version="1.0" encoding="utf-8"?>
+                                                        <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg
+                                                            version="1.1" id="svg8"
+                                                            inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+                                                            sodipodi:docname="1881161.svg"
+                                                            xmlns:cc="http://creativecommons.org/ns#"
+                                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                                                            xml:space="preserve">
+                                                            <path id="path4" inkscape:connector-curvature="0"
+                                                                d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="linktip">Whatsapp</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div>
+                                            <div class="shape">
+                                                <img src="Images/Main/section1-home/Mypicture.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="angle-down-scroll" id="angleDownScroll">
+                                    <i class="uil uil-angle-down"></i>
+                                    <i class="uil uil-angle-down"></i>
+                                    <i class="uil uil-angle-down"></i>
+                                    <span class="scroll-down-tip scrollDTTR">به پایین بکشید</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="sec2-about section-main padding-nav-top">
+                    <div class="container">
+                        <div class="row">
+                            <header class="col-12">
+                                <h2 class="about-header aboutHeaderTR">درباره من</h2>
+                            </header>
+                            <div class="col-12">
+                                <div class="parg-main about-sec-main">
+                                    <h3 class="aboutH3">
+                                        <span class="aboutH3TR">
+                                            توسعه دهنده فرانت اند
+                                        </span>
+                                        <span class="aboutH3JuTR">
+                                            جونیور
+                                        </span>
+                                    </h3>
+                                    <p class="about-sec-P aboutsecpTR">
+                                        با توجه به علاقه و اشتیاق فراوان اینجانب به عرصه کامپیوتر و برنامه نویسی وانتخاب
+                                        شاخه
+                                        فرانت-اند، قصد ادامه این مسیر را داشته تا بتوانم به تخصص کافی دست پیدا کنم؛ و
+                                        تاجایی
+                                        که می توانم به هم نوعانم کمک کنم.
+                                    </p>
+                                    <table class="about-sec-ta">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2" class="aboutsecta1TR">
+                                                    جهت آشنایی بیشتر
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z" />
+                                                            <linearGradient id="abosecta">
+                                                                <stop offset="1%" stop-color="#9600f3" />
+                                                                <stop offset="50%" stop-color="#be00ed" />
+                                                                <stop offset="100%" stop-color="#ff0596" />
+                                                            </linearGradient>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="aboutsecta2TR">
+                                                        مدت یادگیری:
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="aboutsecta3_1TR">
+                                                        به مدت
+                                                    </span>
+                                                    <time datetime="PT9MM">9</time>
+                                                    <span class="aboutsecta3_2TR">
+                                                        ماه از تاریخ
+                                                    </span>
+                                                    <time datetime="2021-12-1">
+                                                        <span class="aboutsecta3_3TR">
+                                                            1400/9/10
+                                                        </span>
+                                                    </time>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M17.09,2.82a8,8,0,0,0-6.68-1.66A8,8,0,0,0,4.14,7.48a8.07,8.07,0,0,0,1.72,6.65A4.54,4.54,0,0,1,7,17v3a3,3,0,0,0,3,3h4a3,3,0,0,0,3-3V17.19A5.17,5.17,0,0,1,18.22,14a8,8,0,0,0-1.13-11.2ZM15,20a1,1,0,0,1-1,1H10a1,1,0,0,1-1-1V19h6Zm1.67-7.24A7.13,7.13,0,0,0,15,17H13V14a1,1,0,0,0-2,0v3H9a6.5,6.5,0,0,0-1.6-4.16,6,6,0,0,1,3.39-9.72A6,6,0,0,1,18,9,5.89,5.89,0,0,1,16.67,12.76Z" />
+                                                            <linearGradient id="abosecta">
+                                                                <stop offset="1%" stop-color="#9600f3" />
+                                                                <stop offset="50%" stop-color="#be00ed" />
+                                                                <stop offset="100%" stop-color="#ff0596" />
+                                                            </linearGradient>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="aboutsecta4TR">
+                                                        مهارت ها:
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    HTML5, CSS3, JS, Bootstrap, Git
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M9.71,6.29a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,0,1.42l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,12l4.3-4.29A1,1,0,0,0,9.71,6.29Zm11,5-5-5a1,1,0,0,0-1.42,1.42L18.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,20.71,11.29Z" />
+                                                            <linearGradient id="abosecta">
+                                                                <stop offset="1%" stop-color="#9600f3" />
+                                                                <stop offset="50%" stop-color="#be00ed" />
+                                                                <stop offset="100%" stop-color="#ff0596" />
+                                                            </linearGradient>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="aboutsecta5TR">
+                                                        پروژه ها:
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Aport
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M21,10a.99974.99974,0,0,0,1-1V6a.9989.9989,0,0,0-.68359-.94824l-9-3a1.002,1.002,0,0,0-.63282,0l-9,3A.9989.9989,0,0,0,2,6V9a.99974.99974,0,0,0,1,1H4v7.18427A2.99507,2.99507,0,0,0,2,20v2a.99974.99974,0,0,0,1,1H21a.99974.99974,0,0,0,1-1V20a2.99507,2.99507,0,0,0-2-2.81573V10ZM20,21H4V20a1.001,1.001,0,0,1,1-1H19a1.001,1.001,0,0,1,1,1ZM6,17V10H8v7Zm4,0V10h4v7Zm6,0V10h2v7ZM4,8V6.7207l8-2.667,8,2.667V8Z" />
+                                                            <linearGradient id="abosecta">
+                                                                <stop offset="1%" stop-color="#9600f3" />
+                                                                <stop offset="50%" stop-color="#be00ed" />
+                                                                <stop offset="100%" stop-color="#ff0596" />
+                                                            </linearGradient>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="aboutsecta6TR">
+                                                        مدارک:
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    HTML Basic, HTML and CSS Online Course
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"
+                                                            viewBox="0 0 48 48">
+                                                            <path
+                                                                d="M21 22h6V8q0-1.25-.85-2.125T24 5q-1.25 0-2.125.85T21 8ZM9 31h30v-6H9ZM5.8 43h6.7v-4.5q0-.65.425-1.075Q13.35 37 14 37q.65 0 1.075.425.425.425.425 1.075V43h7v-4.5q0-.65.425-1.075Q23.35 37 24 37q.65 0 1.075.425.425.425.425 1.075V43h7v-4.5q0-.65.425-1.075Q33.35 37 34 37q.65 0 1.075.425.425.425.425 1.075V43h6.7l-2.5-10H8.3L5.8 43Zm35.1 3H7.1q-1.95 0-3.15-1.55T3.25 41L6 30v-4q0-1.65 1.175-2.825Q8.35 22 10 22h8V8q0-2.5 1.75-4.25T24 2q2.5 0 4.25 1.75T30 8v14h8q1.65 0 2.825 1.175Q42 24.35 42 26v4l2.75 11q.5 1.9-.7 3.45Q42.85 46 40.9 46ZM39 25H9h30Zm-12-3h-6 6Z" />
+                                                            <linearGradient id="abosecta">
+                                                                <stop offset="1%" stop-color="#9600f3" />
+                                                                <stop offset="50%" stop-color="#be00ed" />
+                                                                <stop offset="100%" stop-color="#ff0596" />
+                                                            </linearGradient>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="aboutsecta7TR">
+                                                        کارآموزی:
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <img src="Images/Main/Section2-About/roshdana-logo-crop.png" alt="">
+                                                    <span class="aboutsecta3_4TR">
+                                                        رشدآموز پلتفرم توانمندسازی رشدانا
+                                                    </span>
+                                                    <br>
+                                                    <img src="Images/Main/Section2-About/favicon.jpg" alt="">
+                                                    <span class="aboutsecta8TR">
+                                                        کارآموز دورکار شرکت کیاوب
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skill" class="sect3-skill section-main padding-nav-top">
+                    <div class="container">
+                        <div class="row">
+                            <header class="coll-12">
+                                <h2 class="skill-header skillHeaderTR">
+                                    مهارت ها
+                                </h2>
+                            </header>
+                            <div class="coll-12">
+                                <div class="parg-main skill-sec-main">
+                                    <div>
+                                        <ul class="skill-sec-ul1" id="skillSecUL1">
+                                            <li class="skill-li activeSSU1" value="programming">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                        viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M6,6A2,2,0,0,1,8,4,1,1,0,0,0,8,2,4,4,0,0,0,4,6V9a2,2,0,0,1-2,2,1,1,0,0,0,0,2,2,2,0,0,1,2,2v3a4,4,0,0,0,4,4,1,1,0,0,0,0-2,2,2,0,0,1-2-2V15a4,4,0,0,0-1.38-3A4,4,0,0,0,6,9Zm16,5a2,2,0,0,1-2-2V6a4,4,0,0,0-4-4,1,1,0,0,0,0,2,2,2,0,0,1,2,2V9a4,4,0,0,0,1.38,3A4,4,0,0,0,18,15v3a2,2,0,0,1-2,2,1,1,0,0,0,0,2,4,4,0,0,0,4-4V15a2,2,0,0,1,2-2,1,1,0,0,0,0-2Z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="skill1TR">
+                                                    برنامه نویسی
+                                                </span>
+
+                                            </li>
+
+                                            <li value="software" class="skill-li">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M10,5a1,1,0,1,0,1,1A1,1,0,0,0,10,5ZM6,5A1,1,0,1,0,7,6,1,1,0,0,0,6,5Zm8,0a1,1,0,1,0,1,1A1,1,0,0,0,14,5Zm6-4H4A3,3,0,0,0,1,4V20a3,3,0,0,0,3,3H20a3,3,0,0,0,3-3V4A3,3,0,0,0,20,1Zm1,19a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V11H21ZM21,9H3V4A1,1,0,0,1,4,3H20a1,1,0,0,1,1,1Z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="skill2TR">
+                                                    نرم افزار
+                                                </span>
+                                            </li>
+
+
+                                            <li value="moreskill" class="skill-li">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M19.87,8.6A1,1,0,0,0,19,8H14.42l1.27-4.74a1,1,0,0,0-.17-.87A1,1,0,0,0,14.73,2h-7a1,1,0,0,0-1,.74l-2.68,10a1,1,0,0,0,.17.87,1,1,0,0,0,.8.39H8.89L7.08,20.74a1,1,0,0,0,1.71.93l10.9-12A1,1,0,0,0,19.87,8.6Zm-9.79,8.68,1.07-4a1,1,0,0,0-.17-.87,1,1,0,0,0-.79-.39H6.35L8.49,4h4.93L12.15,8.74a1,1,0,0,0,1,1.26h3.57Z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="skill3TR">
+                                                    مهارت نرم
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="">
+                                        <section value="programming" id="skillSecMa" class="skill-sec-ma1 skill-sec-ma">
+                                            <div class="row">
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="480px" height="480px">
+                                                                <path fill="#E65100"
+                                                                    d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                                                                <path fill="#FF6D00"
+                                                                    d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                                                                <path fill="#FFF"
+                                                                    d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z" />
+                                                                <path fill="#EEE"
+                                                                    d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            85
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="HTML-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    HTML5
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="skill4TR">
+                                                                                    منابع:
+                                                                                </td>
+                                                                                <td>
+                                                                                    w3schools
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    free-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    top-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="480px" height="480px">
+                                                                <path fill="#0277BD"
+                                                                    d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                                                                <path fill="#039BE5"
+                                                                    d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                                                                <path fill="#FFF"
+                                                                    d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
+                                                                <path fill="#EEE"
+                                                                    d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            80
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="CSS-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    CSS3
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="skill4TR">
+                                                                                    منابع:
+                                                                                </td>
+                                                                                <td>
+                                                                                    w3schools
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    free-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    Youtube
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <?xml version="1.0" encoding="utf-8"?>
+                                                            <!DOCTYPE svg
+                                                                PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                                            <svg class="JS-logo" version="1.1" id="svg2"
+                                                                xmlns:cc="http://creativecommons.org/ns#"
+                                                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                                                xmlns:svg="http://www.w3.org/2000/svg"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="297.45px" height="337.342px"
+                                                                viewBox="0 0 297.45 337.342"
+                                                                enable-background="new 0 0 297.45 337.342"
+                                                                xml:space="preserve">
+                                                                <title id="title4">Slice 1</title>
+                                                                <path fill="#D4B830" d="M0,0l27.071,303.62l121.472,33.722l121.811-33.771L297.45,0H0z M138.725,267.6
+                                                            c-92.583-18.464,0,0-92.935-18.45l-5.216-58.467c12.459,0,37.379,0,37.379,0l2.652,29.697l20.741,3.035V96.71l-42.319-0.001
+                                                            l-3.453-37.254h83.151V267.6z M253.797,96.694H198v38.132h52.479L240.159,249.15l-81.091,18.451v-38.819l46.284-8.426l4.484-48.294
+                                                            h-50.769V59.455h98.033L253.797,96.694z" />
+                                                            </svg>
+
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            50
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="js-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    JavaScript
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="skill4TR">
+                                                                                    منابع:
+                                                                                </td>
+                                                                                <td>
+                                                                                    w3schools
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    free-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    top-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="480px" height="480px">
+                                                                <path fill="#673ab7"
+                                                                    d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z" />
+                                                                <path fill="#fff"
+                                                                    d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            65
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="bs-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Bootstrap
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="skill4TR">
+                                                                                    منابع:
+                                                                                </td>
+                                                                                <td>
+                                                                                    Bootstrap
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    top-learn
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    Youtube
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="480px" height="480px">
+                                                                <path fill="#F4511E"
+                                                                    d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            10
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="git-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Git
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="skill4TR">
+                                                                                    منابع:
+                                                                                </td>
+                                                                                <td>
+                                                                                    faradars
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                        </section>
+
+                                        <section value="software" id="skillSecMa" class="skill-sec-ma2 skill-sec-ma">
+                                            <div class="row">
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="240px" height="240px">
+                                                                <path fill="#d35230"
+                                                                    d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z" />
+                                                                <path fill="#ff8f6b"
+                                                                    d="M26,6v18h18C44,14.059,35.941,6,26,6z" />
+                                                                <path fill="#ed6c47"
+                                                                    d="M26,6C16.059,6,8,14.059,8,24h18V6z" />
+                                                                <path
+                                                                    d="M26,16.681C26,14.648,24.352,13,22.319,13H11.774C9.417,16.044,8,19.852,8,24	c0,5.116,2.145,9.723,5.571,13h8.747C24.352,37,26,35.352,26,33.319V16.681z"
+                                                                    opacity=".05" />
+                                                                <path
+                                                                    d="M22.213,13.333H11.525C9.32,16.321,8,20.002,8,24c0,4.617,1.753,8.814,4.611,12h9.602	c1.724,0,3.121-1.397,3.121-3.121V16.454C25.333,14.731,23.936,13.333,22.213,13.333z"
+                                                                    opacity=".07" />
+                                                                <path
+                                                                    d="M22.106,13.667H11.276C9.218,16.593,8,20.151,8,24c0,4.148,1.417,7.956,3.774,11h10.332	c1.414,0,2.56-1.146,2.56-2.56V16.227C24.667,14.813,23.52,13.667,22.106,13.667z"
+                                                                    opacity=".09" />
+                                                                <linearGradient id="N~uyq1CljjkKMh72IFt0Fa" x1="4.586"
+                                                                    x2="22.77" y1="14.586" y2="32.77"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#ca4e2a" />
+                                                                    <stop offset="1" stop-color="#b63016" />
+                                                                </linearGradient>
+                                                                <path fill="url(#N~uyq1CljjkKMh72IFt0Fa)"
+                                                                    d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z" />
+                                                                <path fill="#fff"
+                                                                    d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058	C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99	c0.859,0,1.556,0.697,1.556,1.556V22.358z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            90
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="power-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    PowerPoint
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill5TR">
+                                                                        پیشرفته
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="240px" height="240px">
+                                                                <linearGradient id="Q7XamDf1hnh~bz~vAO7C6a" x1="28"
+                                                                    x2="28" y1="14.966" y2="6.45"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#42a3f2" />
+                                                                    <stop offset="1" stop-color="#42a4eb" />
+                                                                </linearGradient>
+                                                                <path fill="url(#Q7XamDf1hnh~bz~vAO7C6a)"
+                                                                    d="M42,6H14c-1.105,0-2,0.895-2,2v7.003h32V8C44,6.895,43.105,6,42,6z" />
+                                                                <linearGradient id="Q7XamDf1hnh~bz~vAO7C6b" x1="28"
+                                                                    x2="28" y1="42" y2="33.054"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#11408a" />
+                                                                    <stop offset="1" stop-color="#103f8f" />
+                                                                </linearGradient>
+                                                                <path fill="url(#Q7XamDf1hnh~bz~vAO7C6b)"
+                                                                    d="M12,33.054V40c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-6.946H12z" />
+                                                                <linearGradient id="Q7XamDf1hnh~bz~vAO7C6c" x1="28"
+                                                                    x2="28" y1="-15.46" y2="-15.521"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#3079d6" />
+                                                                    <stop offset="1" stop-color="#297cd2" />
+                                                                </linearGradient>
+                                                                <path fill="url(#Q7XamDf1hnh~bz~vAO7C6c)"
+                                                                    d="M12,15.003h32v9.002H12V15.003z" />
+                                                                <linearGradient id="Q7XamDf1hnh~bz~vAO7C6d" x1="12"
+                                                                    x2="44" y1="28.53" y2="28.53"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#1d59b3" />
+                                                                    <stop offset="1" stop-color="#195bbc" />
+                                                                </linearGradient>
+                                                                <path fill="url(#Q7XamDf1hnh~bz~vAO7C6d)"
+                                                                    d="M12,24.005h32v9.05H12V24.005z" />
+                                                                <path
+                                                                    d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z"
+                                                                    opacity=".05" />
+                                                                <path
+                                                                    d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z"
+                                                                    opacity=".07" />
+                                                                <path
+                                                                    d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z"
+                                                                    opacity=".09" />
+                                                                <linearGradient id="Q7XamDf1hnh~bz~vAO7C6e" x1="4.744"
+                                                                    x2="23.494" y1="14.744" y2="33.493"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#256ac2" />
+                                                                    <stop offset="1" stop-color="#1247ad" />
+                                                                </linearGradient>
+                                                                <path fill="url(#Q7XamDf1hnh~bz~vAO7C6e)"
+                                                                    d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z" />
+                                                                <path fill="#fff"
+                                                                    d="M18.403,19l-1.546,7.264L15.144,19h-2.187l-1.767,7.489L9.597,19H7.641l2.344,10h2.352l1.713-7.689	L15.764,29h2.251l2.344-10H18.403z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            58
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="word-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Word
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill6TR">
+                                                                        متوسط
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="240px" height="240px">
+                                                                <rect width="16" height="9" x="28" y="15"
+                                                                    fill="#21a366" />
+                                                                <path fill="#185c37"
+                                                                    d="M44,24H12v16c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2V24z" />
+                                                                <rect width="16" height="9" x="28" y="24"
+                                                                    fill="#107c42" />
+                                                                <rect width="16" height="9" x="12" y="15"
+                                                                    fill="#3fa071" />
+                                                                <path fill="#33c481"
+                                                                    d="M42,6H28v9h16V8C44,6.895,43.105,6,42,6z" />
+                                                                <path fill="#21a366"
+                                                                    d="M14,6h14v9H12V8C12,6.895,12.895,6,14,6z" />
+                                                                <path
+                                                                    d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z"
+                                                                    opacity=".05" />
+                                                                <path
+                                                                    d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z"
+                                                                    opacity=".07" />
+                                                                <path
+                                                                    d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z"
+                                                                    opacity=".09" />
+                                                                <linearGradient id="flEJnwg7q~uKUdkX0KCyBa" x1="4.725"
+                                                                    x2="23.055" y1="14.725" y2="33.055"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#18884f" />
+                                                                    <stop offset="1" stop-color="#0b6731" />
+                                                                </linearGradient>
+                                                                <path fill="url(#flEJnwg7q~uKUdkX0KCyBa)"
+                                                                    d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z" />
+                                                                <path fill="#fff"
+                                                                    d="M9.807,19h2.386l1.936,3.754L16.175,19h2.229l-3.071,5l3.141,5h-2.351l-2.11-3.93L11.912,29H9.526	l3.193-5.018L9.807,19z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            40
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="excel-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Excel
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill7TR">
+                                                                        مبتدی
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="240px" height="240px">
+                                                                <linearGradient id="e4t2Q3zu0NW9dfIUK4ZJaa" x1="12"
+                                                                    x2="44" y1="24" y2="24"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#c965eb" />
+                                                                    <stop offset="1" stop-color="#c767e5" />
+                                                                </linearGradient>
+                                                                <path fill="url(#e4t2Q3zu0NW9dfIUK4ZJaa)"
+                                                                    d="M42,6H14c-1.105,0-2,0.895-2,2v32c0,1.105,0.895,2,2,2h21V15.003h9V8C44,6.895,43.105,6,42,6z" />
+                                                                <linearGradient id="e4t2Q3zu0NW9dfIUK4ZJab" x1="39.5"
+                                                                    x2="39.5" y1="42" y2="33.054"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#7819a2" />
+                                                                    <stop offset="1" stop-color="#771aa9" />
+                                                                </linearGradient>
+                                                                <path fill="url(#e4t2Q3zu0NW9dfIUK4ZJab)"
+                                                                    d="M35,33.054V42h7c1.105,0,2-0.895,2-2v-6.945L35,33.054L35,33.054z" />
+                                                                <linearGradient id="e4t2Q3zu0NW9dfIUK4ZJac" x1="35"
+                                                                    x2="44" y1="19.504" y2="19.504"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#ae4cd5" />
+                                                                    <stop offset="1" stop-color="#ac4ad5" />
+                                                                </linearGradient>
+                                                                <path fill="url(#e4t2Q3zu0NW9dfIUK4ZJac)"
+                                                                    d="M35,15.003h9v9.002h-9V15.003z" />
+                                                                <linearGradient id="e4t2Q3zu0NW9dfIUK4ZJad" x1="35"
+                                                                    x2="44" y1="28.53" y2="28.53"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#912fbd" />
+                                                                    <stop offset="1" stop-color="#9332bf" />
+                                                                </linearGradient>
+                                                                <path fill="url(#e4t2Q3zu0NW9dfIUK4ZJad)"
+                                                                    d="M35,24.005h9v9.05h-9V24.005z" />
+                                                                <path
+                                                                    d="M22.319,13H12v24h10.319C24.352,37,26,35.352,26,33.319V16.681C26,14.648,24.352,13,22.319,13z"
+                                                                    opacity=".05" />
+                                                                <path
+                                                                    d="M22.213,36H12V13.333h10.213c1.724,0,3.121,1.397,3.121,3.121v16.425	C25.333,34.603,23.936,36,22.213,36z"
+                                                                    opacity=".07" />
+                                                                <path
+                                                                    d="M22.106,35H12V13.667h10.106c1.414,0,2.56,1.146,2.56,2.56V32.44C24.667,33.854,23.52,35,22.106,35z"
+                                                                    opacity=".09" />
+                                                                <linearGradient id="e4t2Q3zu0NW9dfIUK4ZJae" x1="4.586"
+                                                                    x2="23.414" y1="14.586" y2="33.414"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#8521b0" />
+                                                                    <stop offset="1" stop-color="#64129a" />
+                                                                </linearGradient>
+                                                                <path fill="url(#e4t2Q3zu0NW9dfIUK4ZJae)"
+                                                                    d="M22,34H6c-1.105,0-2-0.895-2-2V16c0-1.105,0.895-2,2-2h16c1.105,0,2,0.895,2,2v16	C24,33.105,23.105,34,22,34z" />
+                                                                <path fill="#fff"
+                                                                    d="M16.501,19v7.393L11.779,19H9.59v10h1.909v-7.45L16.258,29h2.152V19H16.501z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            50
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="onenote-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    OneNote
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill6TR">
+                                                                        متوسط
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="480px" height="480px">
+                                                                <path fill="#03A9F4"
+                                                                    d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z" />
+                                                                <path fill="#020F16"
+                                                                    d="M20.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S20.53,19.181,20.016,19.174z" />
+                                                                <path fill="#020F16"
+                                                                    d="M9,9v30h30V9H9z M23.365,24.789C22.539,25.597,21.393,26,19.928,26h-1.914v5h-2.871V16.781h4.844c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398S24.192,23.981,23.365,24.789z M32.682,30.336c-0.709,0.573-1.641,0.859-2.793,0.859c-0.775,0-1.459-0.151-2.051-0.454s-1.057-0.725-1.392-1.265s-0.503-1.123-0.503-1.748h2.627c0.014,0.481,0.125,0.843,0.337,1.084s0.558,0.361,1.04,0.361c0.742,0,1.113-0.335,1.113-1.006c0-0.234-0.112-0.451-0.337-0.649S30,27.052,29.225,26.713c-1.139-0.462-1.922-0.94-2.349-1.436s-0.64-1.11-0.64-1.846c0-0.925,0.334-1.688,1.001-2.29s1.552-0.903,2.651-0.903c1.158,0,2.086,0.3,2.783,0.898s1.045,1.403,1.045,2.412h-2.764c0-0.859-0.357-1.289-1.074-1.289c-0.293,0-0.533,0.091-0.723,0.273s-0.283,0.437-0.283,0.762c0,0.234,0.104,0.441,0.313,0.62s0.699,0.435,1.475,0.767c1.127,0.417,1.922,0.881,2.388,1.392s0.698,1.174,0.698,1.987C33.746,29.005,33.391,29.763,32.682,30.336z" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            20
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="photoshop-persent" cx="21"
+                                                                            cy="20" r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Photoshop
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill7TR">
+                                                                        مبتدی
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <section class="col-xsm-12 col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="skill-sec-ma1-sec">
+                                                        <div class="skill-sec-ma1-box">
+                                                            <svg class="HTML-logo" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 48 48" width="240px" height="240px">
+                                                                <linearGradient id="q17mbB32E_FbIzPpfjq_Ta" x1="16.309"
+                                                                    x2="23.023" y1="1.101" y2="19.546"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#f44f5a" />
+                                                                    <stop offset=".443" stop-color="#ee3d4a" />
+                                                                    <stop offset="1" stop-color="#e52030" />
+                                                                </linearGradient>
+                                                                <path fill="url(#q17mbB32E_FbIzPpfjq_Ta)"
+                                                                    d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z" />
+                                                                <linearGradient id="q17mbB32E_FbIzPpfjq_Tb" x1="15.64"
+                                                                    x2="22.314" y1="14.636" y2="32.971"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#ae4cd5" />
+                                                                    <stop offset="1" stop-color="#9331bf" />
+                                                                </linearGradient>
+                                                                <path fill="url(#q17mbB32E_FbIzPpfjq_Tb)"
+                                                                    d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z" />
+                                                                <linearGradient id="q17mbB32E_FbIzPpfjq_Tc" x1="14.81"
+                                                                    x2="21.821" y1="26.357" y2="45.617"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#33c481" />
+                                                                    <stop offset="1" stop-color="#21a366" />
+                                                                </linearGradient>
+                                                                <path fill="url(#q17mbB32E_FbIzPpfjq_Tc)"
+                                                                    d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z" />
+                                                                <linearGradient id="q17mbB32E_FbIzPpfjq_Td" x1="27.498"
+                                                                    x2="34.119" y1=".512" y2="18.702"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#f09ca2" />
+                                                                    <stop offset="1" stop-color="#eb6773" />
+                                                                </linearGradient>
+                                                                <path fill="url(#q17mbB32E_FbIzPpfjq_Td)"
+                                                                    d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z" />
+                                                                <linearGradient id="q17mbB32E_FbIzPpfjq_Te" x1="28.714"
+                                                                    x2="34.857" y1="14.972" y2="31.85"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#32bdef" />
+                                                                    <stop offset="1" stop-color="#1ea2e4" />
+                                                                </linearGradient>
+                                                                <circle cx="32" cy="24" r="7"
+                                                                    fill="url(#q17mbB32E_FbIzPpfjq_Te)" />
+                                                            </svg>
+                                                            <div class="percent">
+                                                                <div class="outer">
+                                                                    <div class="inner">
+                                                                        <span class="skill-sec-ma1-pnumber"
+                                                                            id="numberPe1">
+                                                                            10
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        version="1.1" width="42" height="41">
+                                                                        <circle class="figma-persent" cx="21" cy="20"
+                                                                            r="17" stroke-linecap="round" />
+
+                                                                        <linearGradient id="abosecta">
+                                                                            <stop offset="1%" stop-color="#9600f3" />
+                                                                            <stop offset="50%" stop-color="#be00ed" />
+                                                                            <stop offset="100%" stop-color="#ff0596" />
+                                                                        </linearGradient>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-text">
+                                                            <ul>
+                                                                <li>
+                                                                    Figma
+                                                                </li>
+                                                                <li>
+                                                                    <span class="skill7TR">
+                                                                        مبتدی
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </section>
+
+                                        <section value="moreskill" id="skillSecMa"
+                                            class="moreskill skill-sec-ma3 skill-sec-ma">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="moreskill-text">
+                                                        <ul>
+                                                            <li>
+                                                                <div>
+                                                                    <span class="skill8TR">
+                                                                        کارتیمی
+                                                                    </span>
+                                                                    <span>
+                                                                        80%
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <div></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <span class="skill9TR">
+                                                                        مسؤولیت پذیری
+                                                                    </span>
+                                                                    <span>
+                                                                        68%
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <div></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <span class="skill10TR">
+                                                                        یادگیرنده مشتاق
+                                                                    </span>
+                                                                    <span>
+                                                                        90%
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <div></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <span class="skill11TR">
+                                                                        مدیریت زمان
+                                                                    </span>
+                                                                    <span>
+                                                                        46%
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <div></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <span class="skill12TR">
+                                                                        انگیزه
+                                                                    </span>
+                                                                    <span>
+                                                                        100%
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <div></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="moreskill-img">
+                                                        <img src="Images/Main/section3-Skill/Illustrations_for_event-removebg-preview.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="language" class="sec4-language section-main padding-nav-top">
+                    <div class="container">
+                        <header>
+                            <h2 class="language-header languageHTR">
+                                زبان
+                            </h2>
+                        </header>
+                        <div class="parg-main">
+                            <div class="sec4-language-main">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div>
+                                            <details class="language-sec-detailes" open>
+                                                <summary>
+                                                    <div class="lan-sec-detailes-sumtext">
+                                                        <span class="lan1TR">
+                                                            انگلیسی
+                                                        </span>
+                                                        <span>
+                                                            45%
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="percent">
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="content">
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan2TR">
+                                                                خواندن
+                                                            </span>
+                                                            <span>
+                                                                50%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner read-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan3TR">
+                                                                نوشتن
+                                                            </span>
+                                                            <span>
+                                                                40%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner writing-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan4TR">
+                                                                شنیدن
+                                                            </span>
+                                                            <span>
+                                                                20%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner listen-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan5TR">
+                                                                مکالمه
+                                                            </span>
+                                                            <span>
+                                                                35%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner conv-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </details>
+
+                                            <details class="language-sec-detailes">
+                                                <summary>
+                                                    <div class="lan-sec-detailes-sumtext">
+                                                        <span class="lan6TR">
+                                                            عربی
+                                                        </span>
+                                                        <span>
+                                                            70%
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="percent-arabic">
+                                                        </div>
+                                                    </div>
+                                                </summary>
+                                                <div class="content">
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan2TR">
+                                                                خواندن
+                                                            </span>
+                                                            <span>
+                                                                95%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner read-arabic-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan3TR">
+                                                                نوشتن
+                                                            </span>
+                                                            <span>
+                                                                70%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner writing-arabic-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan4TR">
+                                                                شنیدن
+                                                            </span>
+                                                            <span>
+                                                                50%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner listen-arabic-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <section class="cont-sec">
+                                                        <div class="read-text">
+                                                            <span class="lan5TR">
+                                                                مکالمه
+                                                            </span>
+                                                            <span>
+                                                                60%
+                                                            </span>
+                                                        </div>
+                                                        <div class="percent-outer">
+                                                            <div class="percent-inner conv-arabic-inner">
+
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="seclan-3d">
+                                            <img src="Images/Main/section4-language/language-translate-4730502-3934026.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="school" class="sec5-school section-main padding-nav-top">
+                    <div class="container">
+                        <header>
+                            <h2 class="sec5-shcool-header schoolHTR">
+                                تحصیلات
+                            </h2>
+                        </header>
+                        <div class="parg-main">
+                            <div class="sec5-school-main">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="sec5-school-text">
+                                            <ul>
+                                                <li>
+                                                    <img src="Images/Main/sec5-shool/icons8-university-100.png" />
+                                                    <span class="school1TR">
+                                                        دبیرستان تلاشگران
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <img src="Images/Main/sec5-shool/nomre.png" alt="">
+                                                    <span class="school2TR">
+                                                        معدل: 17
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <img src="Images/Main/sec5-shool/grade.png" alt="">
+                                                    <span class="school3TR">
+                                                        پایه دوازدهم
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="sec5-school-img">
+                                            <img src="Images/Main/sec5-shool/school-sec-main.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="sec5-school-alert">
+                                            <p class="school4TR">
+                                                اینجانب با وجود مشلغه تحصیل قادر بوده به صورت تمام وقت (7-8 ساعت) فعالیت
+                                                کنم.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="sec6-contact section-main padding-nav-top">
+                    <div class="container">
+                        <header>
+                            <h2 class="sec6-contact-header contHTR">
+                                ارتباط با ما
+                            </h2>
+                        </header>
+                        <div class="parg-main">
+                            <div class="sec6-contact-main">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="sec6-contact-text">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://github.com/AKiumarsi" target="_blank">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                                viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span class="cont1TR">
+                                                            گیت هاب
+                                                        </span>
+                                                        <div class="hover">
+                                                            <div class="hover-inner">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.linkedin.com/in/akiumarsiweb" target="_blank">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                                viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M17.5,8.999a5.41868,5.41868,0,0,0-2.56543.64453A.99918.99918,0,0,0,14,8.999H10a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-5.5a1,1,0,1,1,2,0v5.5a.99942.99942,0,0,0,1,1h4a.99942.99942,0,0,0,1-1v-7.5A5.50685,5.50685,0,0,0,17.5,8.999Zm3.5,12H19v-4.5a3,3,0,1,0-6,0v4.5H11v-10h2v.70313a1.00048,1.00048,0,0,0,1.78125.625A3.48258,3.48258,0,0,1,21,14.499Zm-14-12H3a.99943.99943,0,0,0-1,1v12a.99942.99942,0,0,0,1,1H7a.99942.99942,0,0,0,1-1v-12A.99943.99943,0,0,0,7,8.999Zm-1,12H4v-10H6ZM5.01465,1.542A3.23283,3.23283,0,1,0,4.958,7.999h.02832a3.23341,3.23341,0,1,0,.02832-6.457ZM4.98633,5.999H4.958A1.22193,1.22193,0,0,1,3.58887,4.77051c0-.7461.55957-1.22852,1.42578-1.22852A1.2335,1.2335,0,0,1,6.41113,4.77051C6.41113,5.5166,5.85156,5.999,4.98633,5.999Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span class="cont2TR">
+                                                            لینکدین
+                                                        </span>
+                                                        <div class="hover">
+                                                            <div class="hover-inner">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://wa.me/989154148240" target="_blank">
+                                                        <span>
+                                                            <?xml version="1.0" encoding="utf-8"?>
+                                                            <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg
+                                                                version="1.1" id="svg8"
+                                                                inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+                                                                sodipodi:docname="1881161.svg"
+                                                                xmlns:cc="http://creativecommons.org/ns#"
+                                                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                                                xmlns:svg="http://www.w3.org/2000/svg"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" viewBox="0 0 24 24"
+                                                                style="enable-background:new 0 0 24 24;"
+                                                                xml:space="preserve">
+                                                                <path id="path4" inkscape:connector-curvature="0"
+                                                                    d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9" />
+                                                            </svg>
+                                                        </span>
+                                                        <span class="cont3TR">
+                                                            واتساپ
+                                                        </span>
+                                                        <div class="hover">
+                                                            <div class="hover-inner">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+989154148240">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M12.71,16.29l-.15-.12a.76.76,0,0,0-.18-.09L12.2,16a1,1,0,0,0-.91.27,1.15,1.15,0,0,0-.21.33,1,1,0,0,0,1.3,1.31,1.46,1.46,0,0,0,.33-.22,1,1,0,0,0,.21-1.09A1,1,0,0,0,12.71,16.29ZM16,2H8A3,3,0,0,0,5,5V19a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V5A3,3,0,0,0,16,2Zm1,17a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            <bdi>+989154148240</bdi>
+                                                        </span>
+                                                        <div class="hover">
+                                                            <div class="hover-inner">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="mailto: a.kiumarsi.ir@gmail.com">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                                viewBox="0 0 24 24">
+                                                                <path
+                                                                    d="M17,21.63H5a3,3,0,0,1-3-3v-8a1,1,0,0,0-2,0v8a5,5,0,0,0,5,5H17a1,1,0,0,0,0-2Zm4-18H7a3,3,0,0,0-3,3v10a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3v-10A3,3,0,0,0,21,3.63Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L7.41,5.63Zm1.41,11a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7l5.88,5.88a3,3,0,0,0,4.24,0L22,7Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            A.Kiumarsi.ir@gmail.com
+                                                        </span>
+                                                        <div class="hover">
+                                                            <div class="hover-inner">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="sec6-contact-form">
+                                            <form action="" class="row">
+                                                <div class="col-6 col-sm-6">
+                                                    <input type="text" placeholder="نام" class="cont4TR">
+                                                </div>
+                                                <div class="col-6 col-sm-6">
+                                                    <input type="text" placeholder="نام خانودادگی" class="cont5TR">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" placeholder="شماره همراه" class="cont6TR">
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="email" name="" id="" placeholder="ایمیل"
+                                                        class="cont7TR">
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea name="" id="" cols="" rows="5" placeholder="پیام شما"
+                                                        class="cont8TR"></textarea>
+                                                </div>
+                                                <div class="col-3">
+                                                    <button value="sub" class="cont9TR">ارسال</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+    </div>
+
+
+
+    <footer class="footer-page section-main padding-nav-top">
+        <div class="color">
+            <div class="width">
+                <h4 class="footerHTR">
+                    پایان سایت
+                </h4>
+                <p>
+                    <span class="footer1TR">
+                        طراحی و توسعه توسط ابوالفضل کیومرثی
+                    </span>
+                    <br>
+                    <span class="footer2TR">
+                        امیدوارم خوشتون اومده باشه؛
+                    </span>
+                    <br>
+                    <span class="footer3TR">
+                        این اولین شروع برای این سایت هستش و قراره در آینده با به روزرسانی هاش بتروکنه.
+                    </span>
+                    <br>
+                    <span>
+                        V1.0.0
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- SCOPE: Start(JS-Links) -->
+    <!-- NOTE: Bootstrap-JS-link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+    <!-- NOTE: Header-JS-link -->
+    <script src="Js/Header&Nav.js"></script>
+
+    <!-- NOTE: DarkMode-JS-link -->
+    <script src="Js/darkMode.js"></script>
+
+    <!-- NOTE: Translate_to_English-JS-link -->
+    <script src="Js/translate.js"></script>
+
+    <!-- NOTE: Main-JS-link -->
+    <script src="Js/main.js"></script>
+
+
+    <!-- SCOPE: End(JS-Links) -->
+</body>
+
+</html>
